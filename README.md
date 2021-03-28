@@ -1,5 +1,23 @@
 # Agoric
-dev Agoric https://devnet.explorer.agoric.net/validator/agoricvaloper16ekrqhaqjdg554ujyz8jrt26qaslevvfexkd39
+
+Restore steps after system falls down:
+
+1. install new node, sync and init it with old node name:
+ag-chain-cosmos init --chain-id agorictest-7 name_of_my_brocken_node
+
+2. recovery old wallet name like:
+ag-cosmos-helper keys add --recover name_of_my_wallet
+
+3. ask to reset and delegate it to faucet
+
+4. create validator with "ag-cosmos-helper tx staking create-validator ... " ?
+
 
 checking status
 ag-cosmos-helper status --log_level panic  2>&1 | jq .NodeInfo.network,.NodeInfo.moniker,.ValidatorInfo.VotingPower,.SyncInfo.catching_up
+
+dev Agoric https://devnet.explorer.agoric.net/validator/agoricvaloper16ekrqhaqjdg554ujyz8jrt26qaslevvfexkd39
+
+bot faucet logical steps:
+https://github.com/Agoric/faucet/blob/7e7e97e42d0f231ac9b0517d60d336fac40ca731/src/main.js#L109
+
