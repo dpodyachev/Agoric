@@ -21,3 +21,4 @@ dev Agoric https://devnet.explorer.agoric.net/validator/agoricvaloper16ekrqhaqjd
 bot faucet logical steps:
 https://github.com/Agoric/faucet/blob/7e7e97e42d0f231ac9b0517d60d336fac40ca731/src/main.js#L109
 
+https://gist.github.com/0xd18b/6b619e80c56f197066bb45da84b54d4e yum instalation for AWS EC2
