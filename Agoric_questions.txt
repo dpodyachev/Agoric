@@ -1,0 +1,38 @@
+Set up your validator
+
+Validator setup
+===============
+1. URL of your validator on the explorer
+https://testnet.explorer.agoric.net/validator/agoricvaloper1hjelee724ajkac26z9grrenchg5ynrz2qjp4w8
+2. Your Moniker
+moniker=Agoric4
+used tag: @agoric/sdk@2.15.1
+chain:agorictest-7
+delegated to #testnet-faucet channel on Discord with !faucet delegate agoric1hjelee724ajkac26z9grrenchg5ynrz2s2jujx
+Submited the following to the Testnet Portal https://validateagoric.knack.com/agoric-dev#home/submit-tasks/
+https://testnet.agoric.net ???
+
+For prometheus.testnet.agoric.net
+=================================
+http://217.73.86.206:9464/metrics
+http://217.73.86.206:26660/metrics
+
+Twitter with @agoric
+====================
+https://twitter.com/vdp_slot/status/1375224489701687296?s=20
+
+Other validator helpfull info:
+==============================
+https://telegra.ph/Launching-the-Agoric-node--connecting-to-the-Prometheus-system-engrus-03-26
+https://nodes.guru/agoric/tasks
+
+Topic:
+Please provide a brief intro of yourselves and Agoric.
+What are the main motivations behind running the testnet and the ideal outcomes from it?
+Please describe the testnet structure and the thinking that went behind structuring it in 5 phases.
+Why was the participant set capped at 150 validators?
+Is it possible for validators not in the original 150 to participate in later phases? If so, how would that happen, under what circumstances.  
+If a validator is not in the original 150, what's the best way to increase their chances of participating in later phases?
+How will points earned in the testnet translate into the ability to operate on mainnet? Assuming a validator completes all tasks required of them, will the number of tokens earned be enough to operate in mainnet upon launch? Will testnet results be considered, assuming there will be foundation delegations shortly after launch?  
+Do validators have the full week to complete the tasks of a particular phase?  Are rewards determined by how quickly a validator completes the tasks?  
+Will there be a gap between phases?  When will tasks for a phase be announced?
