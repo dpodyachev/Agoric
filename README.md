@@ -1,4 +1,35 @@
 # Agoric
+/root/.ag-cosmos-helper/config/config.toml security fix from https://github.com/cosmos/gaia/blob/master/docs/validators/security.md
+Sentry nodes can be quickly spun up or change their IP addresses. Because the links to the sentry nodes are in private IP space, an internet based attacked cannot disturb them directly. This will ensure validator block proposals and votes always make it to the rest of the network.
+
+To setup your sentry node architecture validators nodes should edit their config.toml:
+
+# Comma separated list of nodes to keep persistent connections to
+# Do not add private peers to this list if you don't want them advertised
+persistent_peers =[list of sentry nodes]
+
+# Set true to enable the peer-exchange reactor
+pex = false
+
+# Sentry Nodes should edit their config.toml:
+# Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
+# Example ID: 3e16af0cead27979e1fc3dac57d03df3c7a77acc@3.87.179.235:26656
+
+private_peer_ids = "node_ids_of_private_peers"
+
+
+Before create validator:
+Validator's PubKey: The private key associated with this Tendermint PubKey is used to sign prevotes and precommits.
+Validator's Address: Application level address. This is the address used to identify your validator publicly. The private key associated with this address is used to delegate, unbond, claim rewards, and participate in governance.
+Validator's node name (moniker)
+Validator's website (Optional)
+Validator's description (Optional)
+Initial commission rate: The commission rate on block rewards and fees charged to delegators.
+Maximum commission: The maximum commission rate which this validator can charge. This parameter cannot be changed after create-validator is processed.
+Commission max change rate: The maximum daily increase of the validator commission. This parameter cannot be changed after create-validator is processed.
+Minimum self-delegation: Minimum amount of Atoms the validator needs to have bonded at all time. If the validator's self-delegated stake falls below this limit, their entire staking pool will unbond.
+
+
 
 Restore steps after system falls down:
 
