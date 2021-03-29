@@ -22,3 +22,10 @@ bot faucet logical steps:
 https://github.com/Agoric/faucet/blob/7e7e97e42d0f231ac9b0517d60d336fac40ca731/src/main.js#L109
 
 https://gist.github.com/0xd18b/6b619e80c56f197066bb45da84b54d4e yum instalation for AWS EC2
+
+
+same validator example:
+https://testnet.explorer.agoric.net/validator/agoricvaloper1hjelee724ajkac26z9grrenchg5ynrz2qjp4w8
+https://testnet.explorer.agoric.net/validator/1AC8D58222BD4B63B301F0850388670720172945
+
+https://testnet.explorer.agoric.net/validator/1AC8D58222BD4B63B301F0850388670720172945
