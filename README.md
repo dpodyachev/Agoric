@@ -59,4 +59,10 @@ same validator example:
 https://testnet.explorer.agoric.net/validator/agoricvaloper1hjelee724ajkac26z9grrenchg5ynrz2qjp4w8
 https://testnet.explorer.agoric.net/validator/1AC8D58222BD4B63B301F0850388670720172945
 
-https://testnet.explorer.agoric.net/validator/1AC8D58222BD4B63B301F0850388670720172945
+
+wget -qO- http://217.73.86.206:26660/metrics |grep -e ^tendermint_consensus_validators\{ -e ^tendermint_consensus_latest_block_height\{ -e ^tendermint_consensus_validator_power{ -e tendermint_p2p_peers\{|cut -d' ' -f2
+73090
+50
+121
+4
+
