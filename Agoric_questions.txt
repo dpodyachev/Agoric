@@ -23,8 +23,10 @@ https://twitter.com/vdp_slot/status/1375224489701687296?s=20
 
 Other validator helpfull info:
 ==============================
+https://gist.github.com/ski/1facb625fdacc4643b3a927b468b5f90
 https://telegra.ph/Launching-the-Agoric-node--connecting-to-the-Prometheus-system-engrus-03-26
 https://nodes.guru/agoric/tasks
+https://github.com/rudolfhe55/agoric-widget
 
 Topic:
 Please provide a brief intro of yourselves and Agoric.
