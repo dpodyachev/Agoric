@@ -1,12 +1,15 @@
-For installation generated [docker container](https://raw.githubusercontent.com/dpodyachev/Agoric/main/Dockerfile) . It is reproducible step and easy to debug with docker logs instead of recomended scheem with systemd.
+For installation was generated docker container (https://raw.githubusercontent.com/dpodyachev/Agoric/main/Dockerfile) for make reproducible step on different infrastructure, for easy debug with docker logs instead of recomended scheem with systemd.
+
+Setup procedure described well and I played with jail, dublicates (second Agoric4) and security.
 
 After installation steps from 
 https://github.com/Agoric/agoric-sdk/wiki/Validator-Guide and 
 https://gist.github.com/dckc/c6d4c5800daca0bd3439aee3e024b317
-I looking security steps for protect my node and how to tune it.
+I looking important security steps for protect my node and how to tune it.
 
-As resume I recommend implement security fix 
-/root/.ag-cosmos-helper/config/config.toml from https://github.com/cosmos/gaia/blob/master/docs/validators/security.md
+As result I recommend implement security fix 
+/root/.ag-cosmos-helper/config/config.toml from 
+https://github.com/cosmos/gaia/blob/master/docs/validators/security.md
 
 Sentry nodes can be quickly spun up or change their IP addresses. Because the links to the sentry nodes are in private IP space, an internet based attacked cannot disturb them directly. This will ensure validator block proposals and votes always make it to the rest of the network.
 
