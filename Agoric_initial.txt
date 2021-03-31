@@ -1,4 +1,4 @@
-For installation I build docker container. It is reproducible step and easy to debug with docker logs instead of recomended scheem with systemd.
+For installation generated [docker container](https://raw.githubusercontent.com/dpodyachev/Agoric/main/Dockerfile) . It is reproducible step and easy to debug with docker logs instead of recomended scheem with systemd.
 
 After installation steps from 
 https://github.com/Agoric/agoric-sdk/wiki/Validator-Guide and 
