@@ -1,7 +1,7 @@
 # Agoric
 
 Security
-=================================
+\=================================
 After installation I searched security steps for protect my node and how to tune it.
 I recommend implement security fix 
 /root/.ag-cosmos-helper/config/config.toml from https://github.com/cosmos/gaia/blob/master/docs/validators/security.md
@@ -23,7 +23,7 @@ pex = false
 
 private_peer_ids = "node_ids_of_private_peers"
 
-=================================
+\=================================
 Knowladge transfer before create validator: 
 Validator's PubKey: The private key associated with this Tendermint PubKey is used to sign prevotes and precommits.
 Validator's Address: Application level address. This is the address used to identify your validator publicly. The private key associated with this address is used to delegate, unbond, claim rewards, and participate in governance.
@@ -34,9 +34,9 @@ Initial commission rate: The commission rate on block rewards and fees charged t
 Maximum commission: The maximum commission rate which this validator can charge. This parameter cannot be changed after create-validator is processed.
 Commission max change rate: The maximum daily increase of the validator commission. This parameter cannot be changed after create-validator is processed.
 Minimum self-delegation: Minimum amount of Atoms the validator needs to have bonded at all time. If the validator's self-delegated stake falls below this limit, their entire staking pool will unbond.
-=================================
+\=================================
 Fonded bug https://github.com/forbole/big-dipper/issues/493
-=================================
+\=================================
 Restore steps after system falls down:
 
 1. install new node, sync and init it with old node name:
@@ -49,7 +49,7 @@ ag-cosmos-helper keys add --recover name_of_my_wallet
 
 4. create validator with "ag-cosmos-helper tx staking create-validator ... " ?
 
-=================================
+\=================================
 checking status
 ag-cosmos-helper status --log_level panic  2>&1 | jq .NodeInfo.network,.NodeInfo.moniker,.ValidatorInfo.VotingPower,.SyncInfo.catching_up
 
