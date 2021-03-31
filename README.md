@@ -109,3 +109,4 @@ wget -qO- http://217.73.86.206:26660/metrics |grep -e ^tendermint_consensus_vali
 
 4
 
+https://keybase.io/team/agoric.testnet.validators Validator communication
