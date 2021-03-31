@@ -60,7 +60,7 @@ Minimum self-delegation: Minimum amount of Atoms the validator needs to have bon
 
 \=================================
 
-Fonded bug https://github.com/forbole/big-dipper/issues/493
+Created bug https://github.com/forbole/big-dipper/issues/493
 
 \=================================
 
