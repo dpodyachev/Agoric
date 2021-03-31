@@ -1,0 +1,26 @@
+For installation I build docker container. It is reproducible step and easy to debug with docker logs instead of recomended scheem with systemd.
+
+After installation steps from 
+https://github.com/Agoric/agoric-sdk/wiki/Validator-Guide and 
+https://gist.github.com/dckc/c6d4c5800daca0bd3439aee3e024b317
+I looking security steps for protect my node and how to tune it.
+
+As resume I recommend implement security fix 
+/root/.ag-cosmos-helper/config/config.toml from https://github.com/cosmos/gaia/blob/master/docs/validators/security.md
+
+Sentry nodes can be quickly spun up or change their IP addresses. Because the links to the sentry nodes are in private IP space, an internet based attacked cannot disturb them directly. This will ensure validator block proposals and votes always make it to the rest of the network.
+
+To setup your sentry node architecture validators nodes should edit their config.toml:
+
+# Comma separated list of nodes to keep persistent connections to
+# Do not add private peers to this list if you don't want them advertised
+persistent_peers =[list of sentry nodes]
+
+# Set true to enable the peer-exchange reactor
+pex = false
+
+# Sentry Nodes should edit their config.toml:
+# Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
+# Example ID: 3e16af0cead27979e1fc3dac57d03df3c7a77acc@3.87.179.235:26656
+
+private_peer_ids = "node_ids_of_private_peers"
